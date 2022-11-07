@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 import java.util.Arrays;
 public class Main {
@@ -306,6 +307,11 @@ public class Main {
         String starter;
         int moves;
 
+        System.out.println("  Welcome To: \n" +
+                " +-+-+-+-+-+-+-+-+-+-+-+\n" +
+                " |T|i|c|-|T|a|c|-|T|o|e|\n" +
+                " +-+-+-+-+-+-+-+-+-+-+-+\n");
+
         do {
             games++;
             moves = 0;
@@ -374,7 +380,12 @@ public class Main {
 
             //prompts user to play again
         } while (SafeInput.getYNConfirm(scan,
-                "Do you want to play again? yes or no?  [Y/N] " ));
+                "  \n" +
+                        " ___       \n" +
+                        "____   _____   _____  _____     ____   ___  ___  __ _____ \n" +
+                        "(( ___ ((   )) ((   )) ||  )    (( ___ ||=|| || \\/ | ||==  \n" +
+                        " \\\\_||  \\\\_//   \\\\_//  ||_//     \\\\_|| || || ||    | ||___\n" +
+                        "Do you want to play again? yes or no?  [Y/N] " ));
 
 
 
